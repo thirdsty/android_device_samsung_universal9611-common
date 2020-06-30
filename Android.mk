@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter SM-M307F SM-M307FN SM-M3070 m30s m30sdd, $(TARGET_DEVICE)),)
+ifneq ($(filter m30sdd, $(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
