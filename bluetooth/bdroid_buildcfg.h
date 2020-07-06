@@ -26,13 +26,9 @@
 static inline const char* BtmGetDefaultName()
 {
     char product_device[PROPERTY_VALUE_MAX];
-    property_get("ro.product.model", product_device, "");
+    property_get("ro.product.device", product_device, "");
     
-    if (strstr(product_device, "SM-M307F"))
-        return "Galaxy M30s";
-    if (strstr(product_device, "SM-M307FN"))
-        return "Galaxy M30s";
-    if (strstr(product_device, "SM-M3070"))
+    if (strstr(product_device, "m30sdd"))
         return "Galaxy M30s";
     
     // Fallback to Default
